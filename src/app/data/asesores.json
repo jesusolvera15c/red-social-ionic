@@ -1,0 +1,30 @@
+[
+    {
+        "nombre":"Juan manuel Stein",
+        "gradoEstudios":"Ing en sistemas",
+        "cubiculo":8,
+        "foto1":"",
+        "foto2":"",
+        "foto3":""
+
+    },
+    {
+        "nombre":"Guillermo servin",
+        "gradoEstudios":"Ing en electronica",
+        "cubiculo":16,
+        "foto1":"",
+        "foto2":"",
+        "foto3":""
+
+    },
+    {
+        "nombre":"Pedro ivan",
+        "gradoEstudios":"Ing en sistemas",
+        "cubiculo":3,
+        "foto1":"",
+        "foto2":"",
+        "foto3":""
+
+    }
+
+]

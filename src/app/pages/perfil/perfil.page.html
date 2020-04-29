@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-toolbar  color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="end">
+      <ion-button  [routerLink]="['/informacion']">
+          <ion-icon name="information-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button  (click)="editModal()">
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-bg">
+
+  <div class="bg-primary vertical-padding" text-center>
+    <div class="play-button-div">
+      <img id="fto" src="{{image}}" alt="" class="image-round">
+      <ion-button class="play-button-icon" color="light" shape="round" (click)="changephoto()"> <ion-icon name="camera"></ion-icon></ion-button>
+
+    </div>
+
+
+    <div class="ion-text-center">
+      <h4 class="text-white">Jesus Olvera</h4>
+    </div>
+    <div class="ion-text-center">
+      <span class="text-white text-job">Live to the Limit.</span>
+    </div>
+
+  </div>
+
+  <ion-grid fixed class="border-bottom bg-white">
+    <ion-row class="ion-no-padding">
+      <ion-col size="4">
+        <div class="ion-text-center">
+          <span class="text-statics-big text-primary">1</span> <br>
+          <small>Publicaciones</small>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="ion-text-center">
+          <span class="text-statics-big text-primary">10.5</span> <br>
+          <small>Seguidores</small>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="ion-text-center">
+          <span class="text-statics-big text-primary">1.3</span> <br>
+          <small>Siguiendo</small>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <ion-grid fixed class="bg-white border-bottom-soft">
+    <ion-row>
+      <ion-col size="6">
+        <div class="ion-text-left">
+          <span class="text-bold">Fotos.</span>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="ion-text-right">
+         
+          <ion-button shape="round" fill="outline" size="small">Mas Fotos</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+
+    
+    <ion-row class="row-cards">
+      <ion-col>
+        <div class="card ion-padding">
+          <img class="profile" src="https://image.shutterstock.com/image-vector/vector-laptop-personal-computer-flat-260nw-389965999.jpg" alt="">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="card ion-padding">
+          <img class="profile" src="https://image.shutterstock.com/image-vector/vector-laptop-personal-computer-flat-260nw-389965999.jpg" alt="">
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="card  ion-padding">
+          <img  class="profile" src="https://image.shutterstock.com/image-vector/vector-laptop-personal-computer-flat-260nw-389965999.jpg" alt="">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card mode="ios">
+    <ion-card-content class="ion-no-padding">
+      <ion-list class="ion-no-padding" lines="none">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://image.flaticon.com/icons/svg/163/163801.svg" />
+          </ion-avatar>
+          <ion-label>
+            <h2>Jesus Olvera</h2>
+            <p>Hace 29 min.</p>
+          </ion-label>
+          <ion-icon slot="end" name="more"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <img src="https://thepracticaldev.s3.amazonaws.com/i/8m2htjjpp31idwz8wnrz.jpg" alt="">
+    <ion-card-content class="bg-white">
+     Trabaja duro y obtendras recompensas duras
+    </ion-card-content>
+    <ion-row>
+      <ion-col size="6">
+        <div class="ion-text-left">
+          <ion-button small color="secondary"><ion-icon name="heart"></ion-icon>Me gusta</ion-button>
+        </div>
+      </ion-col>
+
+      <ion-col size="6">
+        <div class="ion-text-right">
+          <ion-button small color="primary"><ion-icon name="text"></ion-icon> Comentar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="tertiary" size="small">
+      <ion-icon name="person-add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

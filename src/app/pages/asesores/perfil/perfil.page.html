@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar color="secondary" text-center>
+    <ion-buttons slot="start">
+
+      <ion-button (click)="cerrar()"><ion-icon name="close-circle-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title text-center>
+      Informacion 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="vertical-padding">
+  
+    <div class="ion-text-center">
+      <h4>Juan Manuel Stein</h4>
+    </div>
+    <div class="ion-text-center">
+      <span class="text-muted ion-no-margin text-job">El profe stein.</span>
+    </div>
+  
+    <ion-grid fixed>
+      <ion-row>
+
+        <ion-col size="4" class="ion-no-padding position-relative">
+          <ion-button fill="clear" class="button-vertical-align button-right">
+            <ion-icon slot="icon-only" name="chatbubbles"></ion-icon>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="4">
+          <img src="https://image.flaticon.com/icons/svg/163/163801.svg" alt="" class="image-round border-tertiary margin-top">
+        </ion-col>
+        
+        <ion-col size="4" class="ion-no-padding position-relative">
+          <ion-button fill="clear" class="button-vertical-align button-right">
+            <ion-icon slot="icon-only" name="call"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </div>
+
+  <ion-grid fixed class="border-bottom border-top">
+    <ion-row class="ion-no-padding">
+      <ion-col size="4">
+        <div class="ion-text-center">
+          <span class="text-statics-big text-primary">1.5</span> <br>
+          <small>Publicaciones</small>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="ion-text-center">
+          <span class="text-statics-big text-primary">10.5</span> <br>
+          <small>Seguidores</small>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="ion-text-center">
+          <span class="text-statics-big text-primary">1.3</span> <br>
+          <small>Siguiendo</small>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item-divider color="secondary">
+    <div class="vertical-padding">
+      <p class="ion-text-center text-profile">
+        Henry Adams. «El maestro deja una huella para la eternidad; nunca puede decir cuándo se detiene su influencia»
+      </p>
+    </div>
+  </ion-item-divider>
+  <div class="ion-padding" >
+    <ion-grid class="ion-no-padding" text-center>
+      <ion-row >
+        <ion-col size="6">
+          <strong class="text-tertiary">Website</strong> <br>
+          <small class="text-muted">site.com</small>
+        </ion-col>
+        <ion-col size="6">
+          <strong class="text-tertiary">Email</strong> <br>
+          <small class="text-muted">juanmanuel12@tese.edu.mx</small>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <strong class="text-tertiary">Telefono</strong> <br>
+          <small class="text-muted">+52 1234567</small>
+        </ion-col>
+        <ion-col size="6">
+          <strong class="text-tertiary">Divicion</strong> <br>
+          <small class="text-muted">Ingeneria en sistemas</small>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <strong class="text-tertiary">Cubiculo</strong> <br>
+          <small class="text-muted">123</small>
+        </ion-col>
+        <ion-col size="6">
+          <strong class="text-tertiary">Horarios</strong> <br>
+          <ion-button shape="round" fill="outline" size="small">Ver mas</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  
+</ion-content>

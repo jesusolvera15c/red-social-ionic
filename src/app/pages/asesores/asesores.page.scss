@@ -1,0 +1,25 @@
+$avatar-width: 50px;
+.triple-avatar{
+  position: relative;
+  width: $avatar-width;
+  height: $avatar-width;
+  overflow: hidden;
+  border-radius: 50%;
+  div{
+    position: absolute;
+    background-size: cover;
+    left: $avatar-width / 2;
+    width: $avatar-width / 2;
+    height: $avatar-width / 2;
+    &:first-of-type{
+      height: $avatar-width;
+      left: 0px;
+    }
+    &:last-of-type{
+      top: $avatar-width / 2;
+    }
+  }
+}
+
+.ion-chat { font-size: 26px !important;}
+

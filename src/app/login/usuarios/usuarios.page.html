@@ -1,0 +1,68 @@
+<ion-slides ion-slides pager="true" #slides=""  >
+    <ion-slide class="step-one">
+        <ion-list  class="form" >
+          <ion-toolbar color="secondary">
+            <ion-title text-center>
+                Datos Personales
+            </ion-title>
+          </ion-toolbar>
+
+            <ion-item >
+              <ion-label position="floating">Nombre</ion-label>
+              <ion-input class="ion-text-right"></ion-input>
+              <ion-icon slot="end" name="person"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Apellido Paterno</ion-label>
+                <ion-input class="ion-text-right"></ion-input>
+                <ion-icon slot="end" name="person"></ion-icon>
+              </ion-item>
+            <ion-item>
+                  <ion-label position="floating">Apellido Materno</ion-label>
+                  <ion-input class="ion-text-right"></ion-input>
+                  <ion-icon slot="end" name="person"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Año de nacimiento</ion-label>
+                <ion-datetime displayFormat="MM/DD/YYYY" min="1985-03-14" max="2004-12-09"  cancelText="cancelar" doneText="aceptar"></ion-datetime>
+            </ion-item>
+          </ion-list>
+    </ion-slide>
+
+    <ion-slide class="step-two">
+        <ion-list>
+            <ion-toolbar color="primary">
+                <ion-title text-center>
+                    Datos Escolares
+                </ion-title>
+              </ion-toolbar>
+
+
+            <ion-item>
+              <ion-label>Seleciona tu Carrera</ion-label>
+              <ion-select placeholder="Elige Una">
+                <ion-select-option value="Sistemas">Sistemas</ion-select-option>
+                <ion-select-option value="Bioquimica">Bioquimica</ion-select-option>
+                <ion-select-option value="Mecatronica">Mecatronica</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Matricula</ion-label>
+                <ion-input  name="Matricula" type="number" placeholder="Escribe tu Matricula" ngModel required></ion-input>
+                <ion-icon slot="end" name="person"></ion-icon>
+          </ion-item>
+
+
+
+          </ion-list>
+    </ion-slide>
+
+    <ion-slide class="step-three">
+        <ion-img src="./../../assets/img/logo.png"></ion-img>
+        <h1>Bienvenido a la escuela</h1>
+        <p>Tese</p>
+
+        <ion-button color="secondary" [routerLink]="['/noticias']">iniciar sesion</ion-button>
+    </ion-slide>
+</ion-slides>

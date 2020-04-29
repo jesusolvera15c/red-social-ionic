@@ -1,0 +1,34 @@
+ion-slide {
+    height: 100vh;
+    flex-direction: column;
+    width: 40px;
+}
+
+ion-img {
+    max-width: 50vw;
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+
+.step-one {
+    background: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+}
+
+.step-two {
+
+    background: var(--ion-color-secondary);
+    color: var(--ion-color-primary-contrast);
+}
+
+.step-three {
+
+    background: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+}
+
+.item1{
+    background: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+}

@@ -1,0 +1,75 @@
+<ion-content>
+  <div class="sign-container gradient-1">
+
+    <div class="header">
+      <div class="title ion-text-center">
+        <img src="./../../assets/img/logo.png" width="130px" height="140px" alt="">
+      </div>
+    </div>
+
+    <div class="login-container">
+
+      <ion-list lines="none" class="form fade-in">
+        <ion-item>
+          <ion-label>Matricula</ion-label>
+          <ion-input class="ion-text-right"></ion-input>
+          <ion-icon slot="end" name="keypad"></ion-icon>
+        
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input class="ion-text-right"></ion-input>
+          <ion-icon slot="end" name="lock"></ion-icon>
+        </ion-item>
+      </ion-list>
+
+      <div class="ion-text-center fade-in">
+        <ion-button class="green-button" (click)="iniciarSesion() ">
+            <ion-icon name="exit"></ion-icon>  Iniciar Session
+        </ion-button>
+      </div>
+
+    </div>
+
+    <div class="sign-up-container gradient-2" [ngClass]="{'active': signupView}">
+
+      <div class="toggle-text ion-text-center" tappable (click)="toggleSignUpView()">
+
+        <span *ngIf="!signupView" [ngClass]="{'fade-in': !signupView, 'fade-out': signupView}">Crear</span>
+        <span *ngIf="signupView" [ngClass]="{'fade-in': signupView, 'fade-out': !signupView}">Iniciar Session</span>
+        <br>
+        <ion-icon name="arrow-round-up" *ngIf="!signupView" [ngClass]="{'fade-in': !signupView, 'fade-out': signupView}"></ion-icon>
+        <ion-icon name="arrow-round-down" *ngIf="signupView" [ngClass]="{'fade-in': signupView, 'fade-out': !signupView}"></ion-icon>
+
+      </div>
+
+      <ion-list lines="none" class="form" [ngClass]="{'fade-in': signupView, 'fade-out': !signupView}">
+
+        <ion-item>
+          <ion-label>Matricula</ion-label>
+          <ion-input class="ion-text-right"></ion-input>
+          <ion-icon slot="end" name="keypad"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input class="ion-text-right"></ion-input>
+          <ion-icon slot="end" name="lock"></ion-icon>
+        </ion-item>
+        <ion-item>
+            <ion-label>Repetir Password</ion-label>
+            <ion-input class="ion-text-right"></ion-input>
+            <ion-icon slot="end" name="lock"></ion-icon>
+          </ion-item>
+      </ion-list>
+
+      <div class="ion-text-center" [ngClass]="{'fade-in': signupView, 'fade-out': !signupView}">
+        <ion-button class="gray-button" (click)="altaUsuario()">
+          <ion-icon name="person-add"></ion-icon> Crear Cuenta
+        </ion-button>
+      </div>
+
+    </div>
+
+  </div>
+</ion-content>

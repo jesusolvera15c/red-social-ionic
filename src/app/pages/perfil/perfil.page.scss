@@ -1,0 +1,51 @@
+.row-cards {
+    flex-wrap: nowrap;
+    padding: 20px;
+    overflow-y: scroll;
+
+    .card {
+        border-radius: 10px;
+        height: 135px;
+        width: 200px;
+        position: relative;
+    }
+
+    .profile{
+    border: 2px solid #fff;
+    border-radius: 2%;
+    box-shadow: 0 0 5px gray;
+    }
+}
+
+#fto{
+    height: 30vh;
+    width: 40vh;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(41, 52, 98);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-transactions {
+    background: none;
+    --background: none;
+    ion-item {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        --padding-start:10px;
+    }
+}
+
+.play-button-div {
+    position: relative;
+    display: inline-block;
+  }
+  .play-button-icon {
+        position: absolute;
+
+        left: 50%;
+        top: 50%;
+        transform: translate(50%, 130%);
+  }
